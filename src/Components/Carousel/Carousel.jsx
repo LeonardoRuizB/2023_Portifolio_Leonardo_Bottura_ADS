@@ -9,6 +9,7 @@ import 'swiper/css';
 
 import { Pagination, Navigation } from 'swiper/modules';
 
+import favicon from "../../assets/favion/favicon-dev.png";
 import slide_image_1 from "../../assets/certificates/USJT - Diploma Superior Análise e Desenvolvimento de Sistemas-1.png";
 import slide_image_2 from "../../assets/certificates/Udemy - Java Completo Programação orientada a objetos + Projetos-1.png";
 import slide_image_3 from "../../assets/certificates/Oracle - Java Foundations-1.png";
@@ -68,9 +69,12 @@ function Carousel() {
                         slidesPerView: 5, // Reduz o número de slides em telas maiores
                     },
                     768: {
-                        slidesPerView: 1, // Reduz ainda mais em telas médias
+                        slidesPerView: 2, // Reduz ainda mais em telas médias
                     },
                     480: {
+                        slidesPerView: 2, // Apenas um slide visível em dispositivos menores
+                    },
+                    200: {
                         slidesPerView: 1, // Apenas um slide visível em dispositivos menores
                     },
                 }}
@@ -79,37 +83,70 @@ function Carousel() {
                 className="mySwiper"
             >
                 <SwiperSlide className='swiper-slide'>
-                    <img src={slide_image_1} alt="Diploma Superior Análise e Desenvolvimento de Sistemas" />
+                    <a href={slide_image_1} target='_blank'>
+                        <img src={slide_image_1} alt="Diploma Superior Análise e Desenvolvimento de Sistemas" />
+                        <p className="text-carousel">Diploma Superior Análise e Desenvolvimento de Sistemas</p>
+                    </a>
                 </SwiperSlide>
                 <SwiperSlide className='swiper-slide'>
-                    <img src={slide_image_2} alt="Java Completo Programação orientada a objetos" />
+                    <a href={slide_image_2} target='_blank'>
+                        <img src={slide_image_2} alt="Java Completo Programação orientada a objetos" />
+                        <p className="text-carousel">Java Completo Programação orientada a objetos</p>
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide className='swiper-slide' target='_blank'>
+                    <a href={slide_image_3}>
+                        <img src={slide_image_3} alt="Java Foundations" />
+                        <p className="text-carousel">Java Foundations</p>
+                    </a>
                 </SwiperSlide>
                 <SwiperSlide className='swiper-slide'>
-                    <img src={slide_image_3} alt="Java Foundations" />
+                    <a href={slide_image_4} target='_blank'>
+                        <img src={slide_image_4} alt="Java Fundamentals" />
+                        <p className="text-carousel">Java Fundamentals</p>
+                    </a>
                 </SwiperSlide>
                 <SwiperSlide className='swiper-slide'>
-                    <img src={slide_image_4} alt="Java Fundamentals" />
+                    <a href={slide_image_5} target='_blank'>
+                        <img src={slide_image_5} alt="Microsserviços Java com Spring Boot e Spring Cloud" />
+                        <p className="text-carousel">Microsserviços Java com Spring Boot e Spring Cloud</p>
+                    </a>
                 </SwiperSlide>
                 <SwiperSlide className='swiper-slide'>
-                    <img src={slide_image_5} alt="Microsserviços Java com Spring Boot e Spring Cloud" />
+                    <a href={slide_image_6} target='_blank'>
+                        <img src={slide_image_6} alt="Javascript, jQuery, Ajax e Json" />
+                        <p className="text-carousel">Javascript, jQuery, Ajax e Json</p>
+                    </a>
                 </SwiperSlide>
                 <SwiperSlide className='swiper-slide'>
-                    <img src={slide_image_6} alt="Javascript, jQuery, Ajax e Json" />
+                    <a href={slide_image_7} target='_blank'>
+                        <img src={slide_image_7} alt="Computing Foundations Academy" />
+                        <p className="text-carousel">Google - Computing Foundations Academy</p>
+                    </a>
                 </SwiperSlide>
                 <SwiperSlide className='swiper-slide'>
-                    <img src={slide_image_7} alt="Computing Foundations Academy" />
+                    <a href={slide_image_8} target='_blank'>
+                        <img src={slide_image_8} alt="Academy Cloud Foundations" />
+                        <p className="text-carousel">AWS - Academy Cloud Foundations</p>
+                    </a>
                 </SwiperSlide>
                 <SwiperSlide className='swiper-slide'>
-                    <img src={slide_image_8} alt="Academy Cloud Foundations" />
+                    <a href={slide_image_9} target='_blank'>
+                        <img src={slide_image_9} alt="Scrum Foundation Professional Certificate" />
+                        <p className="text-carousel">Scrum Foundation Professional Certificate</p>
+                    </a>
                 </SwiperSlide>
                 <SwiperSlide className='swiper-slide'>
-                    <img src={slide_image_9} alt="Scrum Foundation Professional Certificate" />
+                    <a href={slide_image_10} target='_blank'>
+                        <img src={slide_image_10} alt="Logica de programação com python" />
+                        <p className="text-carousel">Logica de programação com python</p>
+                    </a>
                 </SwiperSlide>
                 <SwiperSlide className='swiper-slide'>
-                    <img src={slide_image_10} alt="Logica de programação com python" />
-                </SwiperSlide>
-                <SwiperSlide className='swiper-slide'>
-                    <img src={slide_image_11} alt="Metodologias ágeis como melhorar a performance de seu projeto" />
+                    <a href={slide_image_11} target='_blank'>
+                        <img src={slide_image_11} alt="Metodologias ágeis como melhorar a performance de seu projeto" />
+                        <p className="text-carousel">Metodologias ágeis como melhorar a performance de seu projeto</p>
+                    </a>
                 </SwiperSlide>
             </Swiper>
         </div>
