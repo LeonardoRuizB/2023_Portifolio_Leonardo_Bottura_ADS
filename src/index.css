@@ -50,21 +50,21 @@ body {
   text-align: center;
 }
 
-.swiper {
+.mySwiper {
   margin-top: 10%;
   width: 100%;
-  height: 100%;
+  height: 300px;
 }
 
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 350px;
+  height: 100%;
 }
 
 .swiper-slide img {
   display: block;
-  width: 100%;
+  height: 100%;
   border-radius: 15px;
 }
 
