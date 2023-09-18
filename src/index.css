@@ -43,6 +43,10 @@ body {
   text-align: center;
 }
 
+.logos-social:hover {
+  color: blue;
+}
+
 #text-typewriter {
   padding-top: 10px;
   font-size: 20px;

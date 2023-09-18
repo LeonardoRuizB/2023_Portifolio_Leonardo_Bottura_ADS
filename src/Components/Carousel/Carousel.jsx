@@ -94,8 +94,8 @@ function Carousel() {
                         <p className="text-carousel">Java Completo Programação orientada a objetos</p>
                     </a>
                 </SwiperSlide>
-                <SwiperSlide className='swiper-slide' target='_blank'>
-                    <a href={slide_image_3}>
+                <SwiperSlide className='swiper-slide'>
+                    <a href={slide_image_3} target='_blank'>
                         <img src={slide_image_3} alt="Java Foundations" />
                         <p className="text-carousel">Java Foundations</p>
                     </a>
