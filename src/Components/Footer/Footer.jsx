@@ -6,7 +6,6 @@ const MainFooter = styled.div`
     padding: 1%;
     text-align: center;
     background-color: white;
-    font-size: 15px;
 
     @media screen and (max-width: 480px) {
         padding: 3%;
@@ -14,18 +13,24 @@ const MainFooter = styled.div`
 `;
 
 const TextFooter = styled.p`
+    font-size: 100%;
     color: blue;
 `;
 
 const LinkGit = styled.a`
-    color: blue;
+    color: rgb(0, 0, 255);
+    text-decoration: none;
+
+    &:hover {
+        color: rgb(0, 0, 128);
+    }
 `;
 
 export default function Footer() {
     return (
         <>
             <MainFooter>
-                <TextFooter>Created by <LinkGit href="https://github.com/LeonardoRuizB" target="_blank">@LeonardoRuizB</LinkGit> - React Js</TextFooter>
+                <TextFooter>@2023 Created by <LinkGit href="https://github.com/LeonardoRuizB" target="_blank">@LeonardoRuizB</LinkGit> - React Js.</TextFooter>
             </MainFooter>
         </>
     );

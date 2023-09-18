@@ -8,6 +8,34 @@ import imageLinkedin from "../../assets/logos/linkedin-logo.png";
 import imageTelegram from "../../assets/logos/telegram-logo.png";
 import imageYoutube from "../../assets/logos/youtube-logo.png";
 import Typewriter from "./TextWriter";
+import styled from "styled-components";
+
+const ImageTop = styled.img`
+    height: 90px;
+    padding: 10px;
+    margin-right: 10px;
+`;
+
+const IconTop = styled.a`
+    padding: 10px;
+    position: relative;
+
+    &::after {
+        content: " ";
+        width: 0%;
+        height: 4px;
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;  
+        transition: 0.2s ease-in-out;
+    }
+
+    &:hover::after {
+        width: 100%
+
+    }
+`;
 
 export default function ContainerTop() {
     return (
@@ -20,21 +48,21 @@ export default function ContainerTop() {
             <h2 id="text-typewriter"><Typewriter/></h2>
 
             <div className="logos-social">
-                <a href="mailto:leobottura17@gmail.com">
-                    <img src={imageEmail} alt="Email Leonardo Bottura"/>
-                </a>
-                <a href="https://github.com/LeonardoRuizB" target="_blank">
-                    <img src={imageGithub} alt="GitHub Leonardo Bottura"/>
-                </a>
-                <a href="https://www.linkedin.com/in/leonardobottura/" target="_blank">
-                    <img src={imageLinkedin} alt="Linkedin Leonardo Bottura"/>
-                </a>
-                <a href="https://t.me/Leonardo_Ruiz156" target="_blank">
-                    <img src={imageTelegram} alt="Telegram Leonardo Bottura"/>
-                </a>
-                <a href="https://www.youtube.com/@leonardoruizbottura" target="_blank">
-                    <img src={imageYoutube} alt="Youtube Leonardo Bottura"/>
-                </a>
+                <IconTop href="mailto:leobottura17@gmail.com">
+                    <ImageTop src={imageEmail} alt="Email Leonardo Bottura"/>
+                </IconTop>
+                <IconTop href="https://github.com/LeonardoRuizB" target="_blank">
+                    <ImageTop src={imageGithub} alt="GitHub Leonardo Bottura"/>
+                </IconTop>
+                <IconTop href="https://www.linkedin.com/in/leonardobottura/" target="_blank">
+                    <ImageTop src={imageLinkedin} alt="Linkedin Leonardo Bottura"/>
+                </IconTop>
+                <IconTop href="https://t.me/Leonardo_Ruiz156" target="_blank">
+                    <ImageTop src={imageTelegram} alt="Telegram Leonardo Bottura"/>
+                </IconTop>
+                <IconTop href="https://www.youtube.com/@leonardoruizbottura" target="_blank">
+                    <ImageTop src={imageYoutube} alt="Youtube Leonardo Bottura"/>
+                </IconTop>
             </div>
         </>
     );
