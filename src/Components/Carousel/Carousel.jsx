@@ -9,7 +9,6 @@ import 'swiper/css';
 
 import { Pagination, Navigation } from 'swiper/modules';
 
-import favicon from "../../assets/favion/favicon-dev.png";
 import slide_image_1 from "../../assets/certificates/USJT - Diploma Superior Análise e Desenvolvimento de Sistemas-1.png";
 import slide_image_2 from "../../assets/certificates/Udemy - Java Completo Programação orientada a objetos + Projetos-1.png";
 import slide_image_3 from "../../assets/certificates/Oracle - Java Foundations-1.png";
@@ -21,6 +20,18 @@ import slide_image_8 from "../../assets/certificates/AWS - Academy Cloud Foundat
 import slide_image_9 from "../../assets/certificates/CertiProf - Scrum Foundation Professional Certificate SFPC-1.png";
 import slide_image_10 from "../../assets/certificates/Extensão - Logica de programação com python-1.png";
 import slide_image_11 from "../../assets/certificates/Extensão - Metodologias ágeis como melhorar a performance de seu projeto-1.png";
+import styled from 'styled-components';
+
+const TextCarousel = styled.h2`
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+
+    @media (max-width: 480px) {
+        margin-top: 12%;
+    }
+`;
 
 function Carousel() {
     const [swiperRef, setSwiperRef] = useState(null);
@@ -56,6 +67,7 @@ function Carousel() {
 
     return (
         <div className='container-carousel'>
+            <TextCarousel>Certificados</TextCarousel>
             <Swiper
                 onSwiper={setSwiperRef}
                 slidesPerView={5}
@@ -66,16 +78,16 @@ function Carousel() {
                 }}
                 breakpoints={{
                     1024: {
-                        slidesPerView: 5, // Reduz o número de slides em telas maiores
+                        slidesPerView: 5,
                     },
                     768: {
-                        slidesPerView: 2, // Reduz ainda mais em telas médias
+                        slidesPerView: 2, 
                     },
                     480: {
-                        slidesPerView: 2, // Apenas um slide visível em dispositivos menores
+                        slidesPerView: 2, 
                     },
                     200: {
-                        slidesPerView: 1, // Apenas um slide visível em dispositivos menores
+                        slidesPerView: 1, 
                     },
                 }}
                 navigation={true}
