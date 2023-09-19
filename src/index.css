@@ -18,6 +18,7 @@ body {
 }
 
 .name {
+  margin-top: 2%;
   font-family: 'Caveat';
   transform: rotate(-8deg);
   color: white;
@@ -82,4 +83,35 @@ body {
 
 a {
   text-decoration: none;
+}
+
+#link-to-top {
+  text-decoration: none;
+  background-color: #001361;
+  padding: 10px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 65px;
+  height: 65px;
+  border-radius: 10px;  
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); 
+  
+  @media (max-width: 480px) {
+    bottom: 40px;
+  }
+}
+
+#link-to-top img{
+  text-decoration: none;
+  padding: 10px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  width: 65px;
+  height: 65px;
+
+  @media (max-width: 480px) {
+    bottom: 40px;
+  }
 }
