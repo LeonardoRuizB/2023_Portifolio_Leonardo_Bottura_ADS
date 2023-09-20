@@ -30,6 +30,7 @@ const TextCarousel = styled.h2`
 
     @media (max-width: 480px) {
         margin-top: 12%;
+        margin-bottom: 10%;
     }
 `;
 
