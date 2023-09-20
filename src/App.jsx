@@ -4,6 +4,7 @@ import Carousel from './Components/Carousel/Carousel';
 import Footer from './Components/Footer/Footer';
 import Aboutme from './Components/About Me/About-me';
 import WorkExperience from './Components/Work Experience/Work-experience';
+import SectionCards from './Components/ProjectsGit/SectionCards';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Aboutme />
       <WorkExperience />
       <Carousel />
+      <SectionCards />
       <Footer />
     </>
   )
