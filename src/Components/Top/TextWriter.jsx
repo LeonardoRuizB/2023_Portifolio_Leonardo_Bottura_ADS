@@ -5,6 +5,7 @@ const Typewriter = () => {
     "Graduate in Systems Analysis and Development",
     "Software Developer",
     "Web Developer",
+    "Full-Stack Developer",
   ];
 
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
