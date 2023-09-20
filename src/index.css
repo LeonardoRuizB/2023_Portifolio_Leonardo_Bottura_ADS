@@ -86,7 +86,6 @@ a {
 }
 
 #link-to-top {
-  text-decoration: none;
   background-color: #001361;
   padding: 10px;
   position: fixed;
@@ -96,10 +95,12 @@ a {
   height: 65px;
   border-radius: 10px;  
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); 
+  transition: bottom 0.3s ease;
   
   @media (max-width: 480px) {
     bottom: 40px;
   }
+  
 }
 
 #link-to-top img{
@@ -114,4 +115,27 @@ a {
   @media (max-width: 480px) {
     bottom: 40px;
   }
+}
+
+::-webkit-scrollbar {
+  width: 12px; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white; 
+  border-radius: 5px; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: #001361; 
+  margin-top: 5%; 
+  margin-bottom: 5%; 
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }
