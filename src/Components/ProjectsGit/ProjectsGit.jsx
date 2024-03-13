@@ -7,6 +7,7 @@ import imageComuni from "../../assets/logos/comunidade-mais.png";
 import imageHealth from "../../assets/logos/logo-HealthStock.png";
 import imagePoke from "../../assets/logos/pokedex.png";
 import imageFashion from "../../assets/logos/logo-fahion-live.png";
+import imageChocomel from "../../assets/logos/logo-chocomel.png";
 
 const CardBody = styled.div`
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5); 
@@ -24,7 +25,7 @@ const CardBody = styled.div`
 `;
 
 const CardImage = styled.img`
-    object-fit: contain;
+    // object-fit: contain;
     height: 200px;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
@@ -61,6 +62,13 @@ const CardLink = styled.a`
 
 export default function Card() {
     const [CardMetas] = useState([
+        {
+            title: "Projeto Chocomel",
+            description:
+                "Desenvolvido em JavaScript - Projeto desenvolvido logo após eu terminar um Curso de JavaScript, Ajax e Jquery, eu queria colocar meus conhecimentos em prática em um projeto símples e meu amigo me indicou que eu fizesse uma Pokédex para treinar Conectar API e JavaScript.",
+            image: imageChocomel,
+            link: "https://github.com/LeonardoRuizB/2023_Projeto_Pokedex_JavaScript",
+        },
         {
             title: "Projeto EcoChoice Sustentabilidade",
             description:
