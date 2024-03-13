@@ -94,7 +94,7 @@ export default function WorkExperience() {
                     <img src={image} alt="Zeppelin Pneus" />
                     <TitleWork>Zeppelin Pneus e Rodas Ltda Me (Assistente Administrativo)</TitleWork>
                 </ImageFlex>
-                <h3>( jan/2017 - abr/2023 ) - 6 Anos e 4 Meses</h3>
+                <h3>( jan/2017 até o momento )</h3>
                 <div>
                     <li>2017 - Marketing Digital e Suporte TI</li>
                     <p>Iniciei minha jornada como Marketing digital fazendo o site da empresa, parte de cadastramento de produtos, banners
@@ -105,9 +105,9 @@ export default function WorkExperience() {
                     <p>Ainda fazendo funções as anteriores, mas agora eu também estava vendendo, usando o conhecimento que adquiri na produção do site para vender os produtos.</p>
                 </div>
                 <div>
-                    <li>2019 / 2023 - Vendedor e Assistente Administrativo</li>
+                    <li>2019 até o momento - Vendedor e Assistente Administrativo</li>
                     <p>Durante esse período acabei saindo do gerenciamento do site, comecei a focar em vender e me tornar um assistente administrativo,
-                        ajudando o controle de boletos, pagamentos de funcionários, fiz uma planilha de entrada de vendas no Excel usando PROCV,
+                        ajudando o controle de boletos, pagamentos de funcionários, fiz uma planilha de entrada de vendas no Excel usando Comandos avançados do excel,
                         onde conseguimos eliminar a maneira antiga que era escrever em uma folha, diminuindo diversos erros.</p>
                 </div>
             </DivWork>
