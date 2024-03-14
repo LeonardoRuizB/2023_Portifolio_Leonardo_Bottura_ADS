@@ -65,7 +65,7 @@ export default function Card() {
         {
             title: "Projeto Chocomel",
             description:
-                "Desenvolvido em JavaScript - Projeto desenvolvido logo após eu terminar um Curso de JavaScript, Ajax e Jquery, eu queria colocar meus conhecimentos em prática em um projeto símples e meu amigo me indicou que eu fizesse uma Pokédex para treinar Conectar API e JavaScript.",
+                "Desenvolvido em ReactJs, projeto Full-Stack utilizando o ReactJs e o Firebase, fiz um projeto Web Full-Stack com back end feito pelo Firebase, fiz um site Web para minha amiga que tem uma doceria para treinar meus conhecimentos.",
             image: imageChocomel,
             link: "https://github.com/LeonardoRuizB/2023_Projeto_Pokedex_JavaScript",
         },

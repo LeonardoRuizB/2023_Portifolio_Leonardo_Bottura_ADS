@@ -19,10 +19,10 @@ const TextFooter = styled.p`
 
 const LinkGit = styled.a`
     color: rgb(0, 0, 255);
-    text-decoration: none;
+    text-decoration: underline;
 
     &:hover {
-        color: rgb(0, 0, 128);
+        color: #4a90e2;
     }
 `;
 

@@ -51,6 +51,8 @@ export default function Aboutme() {
                 sempre arrumando os eletrônicos da minha família. Recentemente, concluí minha graduação em Análise e Desenvolvimento de Sistemas 
                 na Universidade São Judas Tadeu. </p>
 
+                <p>No momento estou cursando minha segunda graduação que é Ciência Da Computação no Centro Universitário FAM</p>
+
                 <p>No meu tempo livre, gosto de estudar para sempre estar me aprimorando. Nos fins de semana, 
                 é quando aproveito para me divertir com uma boa jogatina. Sou uma pessoa que adora desafios, especialmente aqueles que me tiram da minha zona de conforto, 
                 pois acredito que é nesses momentos que cresço e evoluo como desenvolvedor.</p>
