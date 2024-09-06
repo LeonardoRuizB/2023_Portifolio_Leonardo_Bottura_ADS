@@ -9,17 +9,17 @@ import 'swiper/css';
 
 import { Pagination, Navigation } from 'swiper/modules';
 
-import slide_image_1 from "../../assets/certificates/USJT - Diploma Superior Análise e Desenvolvimento de Sistemas-1.png";
-import slide_image_2 from "../../assets/certificates/Udemy - Java Completo Programação orientada a objetos + Projetos-1.png";
-import slide_image_3 from "../../assets/certificates/Oracle - Java Foundations-1.png";
-import slide_image_4 from "../../assets/certificates/Oracle - Java Fundamentals-1.png";
-import slide_image_5 from "../../assets/certificates/Udemy - Microsserviços Java com Spring Boot e Spring Cloud-1.png";
-import slide_image_6 from "../../assets/certificates/Udemy - Aprenda Javascript, jQuery, Ajax e Json do Zero na Prática-1.png";
-import slide_image_7 from "../../assets/certificates/Google Cloud - Computing Foundations Academy-1.png";
-import slide_image_8 from "../../assets/certificates/AWS - Academy Cloud Foundations-1.png";
-import slide_image_9 from "../../assets/certificates/CertiProf - Scrum Foundation Professional Certificate SFPC-1.png";
-import slide_image_10 from "../../assets/certificates/Extensão - Logica de programação com python-1.png";
-import slide_image_11 from "../../assets/certificates/Extensão - Metodologias ágeis como melhorar a performance de seu projeto-1.png";
+import slide_image_1 from "../../assets/certificates/USJT_Diploma.png";
+import slide_image_2 from "../../assets/certificates/Java_completo.png";
+import slide_image_3 from "../../assets/certificates/Oracle _Java_Foundations.png";
+import slide_image_4 from "../../assets/certificates/Oracle_ Java_Fundamentals.png";
+import slide_image_5 from "../../assets/certificates/Microsserviços.png";
+import slide_image_6 from "../../assets/certificates/JavaScript.png";
+import slide_image_7 from "../../assets/certificates/Google_cloud.png";
+import slide_image_8 from "../../assets/certificates/AWS.png";
+import slide_image_9 from "../../assets/certificates/Scrum.png";
+import slide_image_10 from "../../assets/certificates/Logica_Pyton.png";
+import slide_image_11 from "../../assets/certificates/Metodologias.png";
 import styled from 'styled-components';
 
 const TextCarousel = styled.h2`
