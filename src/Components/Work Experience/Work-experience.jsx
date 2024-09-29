@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useRef, useState } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import styled from "styled-components";
 
-import image from "../../assets/images/zeppelin-pneus.png";
+import image1 from "../../assets/logos/Logo-Bradesco.png";
+import image2 from "../../assets/images/zeppelin-pneus.png";
+
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import 'swiper/css';
+import { Pagination, Navigation } from 'swiper/modules';
 
 const DivWork = styled.div`
-    margin-top: 5%;
-    height: 40%;
-    width: 60%;
+    height: auto;
+    width: 100%;
     border-radius: 15px;
     padding: 2%;
     background-color: #001361;
@@ -85,32 +91,99 @@ const ImageFlex = styled.div`
     }
 `;
 
+const TextCarousel = styled.h2`
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+
+    @media (max-width: 480px) {
+        margin-top: 12%;
+        margin-bottom: 10%;
+    }
+`;
+
 export default function WorkExperience() {
+    const [swiperRef, setSwiperRef] = useState(null);
+
     return (
-        <CenteredDivWork>
-            <DivWork>
-                <h2>Experiência Profissional</h2>
-                <ImageFlex>
-                    <img src={image} alt="Zeppelin Pneus" />
-                    <TitleWork>Zeppelin Pneus e Rodas Ltda Me (Assistente Administrativo)</TitleWork>
-                </ImageFlex>
-                <h3>( jan/2017 até o momento )</h3>
-                <div>
-                    <li>2017 - Marketing Digital e Suporte TI</li>
-                    <p>Iniciei minha jornada como Marketing digital fazendo o site da empresa, parte de cadastramento de produtos, banners
-                        e promoções, também atuei como suporte técnico de TI, fazendo a manutenção e inspeção dos equipamentos eletronicos.</p>
-                </div>
-                <div>
-                    <li>2018 - Vendedor e Marketing Digital</li>
-                    <p>Ainda fazendo funções as anteriores, mas agora eu também estava vendendo, usando o conhecimento que adquiri na produção do site para vender os produtos.</p>
-                </div>
-                <div>
-                    <li>2019 até o momento - Vendedor e Assistente Administrativo</li>
-                    <p>Durante esse período acabei saindo do gerenciamento do site, comecei a focar em vender e me tornar um assistente administrativo,
-                        ajudando o controle de boletos, pagamentos de funcionários, fiz uma planilha de entrada de vendas no Excel usando Comandos avançados do excel,
-                        onde conseguimos eliminar a maneira antiga que era escrever em uma folha, diminuindo diversos erros.</p>
-                </div>
-            </DivWork>
-        </CenteredDivWork>
+        <div>
+        <TextCarousel>Experiência Profissional</TextCarousel>
+
+        <Swiper
+            onSwiper={setSwiperRef}
+            slidesPerView={5}
+            centeredSlides={true}
+            spaceBetween={30}
+            pagination={{
+                type: 'fraction',
+            }}
+            breakpoints={{
+                1024: {
+                    slidesPerView: 2,
+                },
+                768: {
+                    slidesPerView: 2, 
+                },
+                480: {
+                    slidesPerView: 2, 
+                },
+                200: {
+                    slidesPerView: 1, 
+                },
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+        >
+            <CenteredDivWork>
+                <SwiperSlide className='swiper-slide'>
+                    <DivWork>
+                        <ImageFlex>
+                            <img src={image1} alt="Zeppelin Pneus" />
+                            <TitleWork>Banco Bradesco S/A (Estagiário de Sistemas)</TitleWork>
+                        </ImageFlex>
+                        <h3>( Junho/2024 até o momento )</h3>
+                        <div>
+                            <li>2024 - Inicio Capacitação</li>
+                            <p>
+                                Durante 2 meses, realizei minha jornada na capacitação de MAINFRAME(Cobol), durante a capacitação eu consegui ser destaque,
+                                entregando os projetos com excelência, antes do tempo e em primeiro.
+                            </p>
+                            <p>
+                                Após o treinamento de MAINFRAME(Cobol), comecei o treinamento de JAVA, como já estudei bastante sobre JAVA e tenho bastante familiaridade,
+                                consegui me destacar na capacitação.
+                            </p>
+                        </div>
+                    </DivWork>
+                </SwiperSlide>
+                <SwiperSlide className='swiper-slide'>
+                    <DivWork>
+                        <ImageFlex>
+                            <img src={image2} alt="Zeppelin Pneus" />
+                            <TitleWork>Zeppelin Pneus e Rodas Ltda Me (Assistente Administrativo)</TitleWork>
+                        </ImageFlex>
+                        <h3>( Janeiro/2017 até Junho/2024 )</h3>
+                        <div>
+                            <li>2017 - Marketing Digital e Suporte TI</li>
+                            <p>Iniciei minha jornada como Marketing digital fazendo o site da empresa, parte de cadastramento de produtos, banners
+                                e promoções, também atuei como suporte técnico de TI, fazendo a manutenção e inspeção dos equipamentos eletronicos.</p>
+                        </div>
+                        <div>
+                            <li>2018 - Vendedor e Marketing Digital</li>
+                            <p>Ainda fazendo funções as anteriores, mas agora eu também estava vendendo, usando o conhecimento que adquiri na produção do site para vender os produtos.</p>
+                        </div>
+                        <div>
+                            <li>2019 até o final - Vendedor e Assistente Administrativo</li>
+                            <p>Durante esse período acabei saindo do gerenciamento do site, comecei a focar em vender e me tornar um assistente administrativo,
+                                ajudando o controle de boletos, pagamentos de funcionários, fiz uma planilha de entrada de vendas no Excel usando Comandos avançados do excel,
+                                onde conseguimos eliminar a maneira antiga que era escrever em uma folha, diminuindo diversos erros.
+                            </p>
+                        </div>
+                    </DivWork>
+                </SwiperSlide>
+            </CenteredDivWork>
+        </Swiper>
+        </div>
     );
 }

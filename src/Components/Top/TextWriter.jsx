@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 
 const Typewriter = () => {
   const phrases = [
-    "Graduate in Systems Analysis and Development",
-    "Software Developer",
-    "Web Developer",
-    "Full-Stack Developer",
+    "Graduado em Análise e Desenvolvimento de Sistemas",
+    "Desenvolvedor de Software",
+    "Desenvolvedor Web",
+    "Desenvolvedor Full-Stack",
+    "Cursando Ciência da computação"
   ];
 
   const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);

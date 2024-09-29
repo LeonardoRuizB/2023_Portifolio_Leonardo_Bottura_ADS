@@ -74,6 +74,7 @@ function Carousel() {
                 slidesPerView={5}
                 centeredSlides={true}
                 spaceBetween={30}
+                initialSlide={1}
                 pagination={{
                     type: 'fraction',
                 }}

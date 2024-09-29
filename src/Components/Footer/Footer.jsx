@@ -30,7 +30,7 @@ export default function Footer() {
     return (
         <>
             <MainFooter>
-                <TextFooter>&copy; 2023 Created by <LinkGit href="https://github.com/LeonardoRuizB" target="_blank">@LeonardoRuizB</LinkGit> - React Js.</TextFooter>
+                <TextFooter>&copy; 2024 Created by <LinkGit href="https://github.com/LeonardoRuizB" target="_blank">@LeonardoRuizB</LinkGit> - React Js.</TextFooter>
             </MainFooter>
         </>
     );

@@ -7,6 +7,7 @@ import imageGithub from "../../assets/logos/github-logo.png";
 import imageLinkedin from "../../assets/logos/linkedin-logo.png";
 import imageTelegram from "../../assets/logos/telegram-logo.png";
 import imageYoutube from "../../assets/logos/youtube-logo.png";
+import imageMicrosoft from "../../assets/logos/logo-microsoft.png";
 import Typewriter from "./TextWriter";
 import styled from "styled-components";
 
@@ -62,6 +63,9 @@ export default function ContainerTop() {
                 </IconTop>
                 <IconTop href="https://www.youtube.com/@leonardoruizbottura" target="_blank">
                     <ImageTop src={imageYoutube} alt="Youtube Leonardo Bottura"/>
+                </IconTop>
+                <IconTop href="https://learn.microsoft.com/pt-br/users/leonardobottura/" target="_blank">
+                    <ImageTop src={imageMicrosoft} alt="Microsoft Learn Leonardo Bottura"/>
                 </IconTop>
             </div>
         </>

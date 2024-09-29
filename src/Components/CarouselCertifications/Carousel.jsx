@@ -11,6 +11,8 @@ import { Pagination, Navigation } from 'swiper/modules';
 
 import slide_image_1 from "../../assets/certifications/Certificação Microsoft Azure AZ-900.png";
 import slide_image_2 from "../../assets/certifications/Certificação Microsoft Azure DP-900.png";
+import slide_image_3 from "../../assets/certifications/Certificação Microsoft Azure SC-900-1.png";
+
 
 import styled from 'styled-components';
 
@@ -66,6 +68,7 @@ function CarouselCertifications() {
                 slidesPerView={5}
                 centeredSlides={true}
                 spaceBetween={30}
+                initialSlide={1}
                 pagination={{
                     type: 'fraction',
                 }}
@@ -97,6 +100,12 @@ function CarouselCertifications() {
                     <a href={slide_image_2} target='_blank'>
                         <img src={slide_image_2} alt="Certificação Microsoft DP-900" />
                         <p className="text-carousel">Certificação Microsoft DP-900</p>
+                    </a>
+                </SwiperSlide>
+                <SwiperSlide className='swiper-slide'>
+                    <a href={slide_image_3} target='_blank'>
+                        <img src={slide_image_3} alt="Certificação Microsoft SC-900" />
+                        <p className="text-carousel">Certificação Microsoft SC-900</p>
                     </a>
                 </SwiperSlide>
             </Swiper>
