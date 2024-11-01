@@ -147,12 +147,10 @@ export default function WorkExperience() {
                         <div>
                             <li>2024 - Inicio Capacitação</li>
                             <p>
-                                Durante 2 meses, realizei minha jornada na capacitação de MAINFRAME(Cobol), durante a capacitação eu consegui ser destaque,
-                                entregando os projetos com excelência, antes do tempo e em primeiro.
+                                Participei de uma capacitação de dois meses em MAINFRAME (COBOL), onde consegui entregar os projetos com qualidade e dentro do prazo.
                             </p>
                             <p>
-                                Após o treinamento de MAINFRAME(Cobol), comecei o treinamento de JAVA, como já estudei bastante sobre JAVA e tenho bastante familiaridade,
-                                consegui me destacar na capacitação.
+                                Após essa fase, iniciei o treinamento em JAVA, e por já ter estudado a linguagem anteriormente, consegui acompanhar bem o conteúdo e me destacar em algumas atividades.
                             </p>
                         </div>
                     </DivWork>
